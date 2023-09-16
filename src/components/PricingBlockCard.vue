@@ -14,7 +14,7 @@
 
         <p class="period-paragraph">Yearly Billing </p>
         <label class="period-checkbox-group">
-          <input @click="togglePeriod" class="period-checkbox" id="checkbox1" type="checkbox " />
+          <input @click="togglePeriod" class="period-checkbox" id="checkbox1" type="checkbox" />
           <span class="period-checkbox-round"></span>
         </label>
         <p class="period-paragraph">
