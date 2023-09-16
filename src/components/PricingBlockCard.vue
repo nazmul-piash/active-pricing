@@ -4,7 +4,7 @@
       <p class="pageviews">{{ pageviewsValue }} </p>
       <div class="price-group">
         <h3 class="price">${{ finalPrice }}.00</h3>
-        <span class="period">/ month</span>
+        <span class="period"></span>
       </div>
     </div>
 
