@@ -18,3 +18,8 @@ npm run dev
 ```sh
 npm run build
 ```
+
+
+### Reference 
+https://interactive-pricing-component.netlify.app/
+Challenge by Frontend Mentor. Coded by Thomas Jonstrup.
