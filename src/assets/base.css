@@ -18,11 +18,11 @@
   /* Pricing Component Background */
   --c-white: hsl(0, 0%, 100%);
   /* Main Background */
-  --c-very-pale-blue: hsl(230, 100%, 99%);
+  --c-very-pale-blue: hsl(228, 79%, 85%);
   /* Empty Slider Bar */
-  --c-light-grayish-blue: hsl(224, 65%, 95%);
+  --c-light-grayish-blue: hsl(225, 8%, 29%);
   /* Toggle Background */
-  --c-light-grayish-blue-toggle: hsl(223, 50%, 87%);
+  --c-light-grayish-blue-toggle: hsl(133, 57%, 83%);
   /* Text */
   --c-grayish-blue: hsl(225, 20%, 60%);
   /* Text & CTA Background */

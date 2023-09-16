@@ -17,24 +17,24 @@
     />
     <div class="">
     <div class="period-block">
-      <p class="period-paragraph">Yearly Billing per Month</p>
+      <p class="period-paragraph">Yearly Billing </p>
       <label class="period-checkbox-group">
         <input @click="togglePeriod" class="period-checkbox" id="checkbox1" type="checkbox" />
         <span class="period-checkbox-round"></span>
       </label>
       <p class="period-paragraph">
-        Yearly Billing <span class="discount discount-desc">25% discount</span
+        Overall <span class="discount discount-desc">25% discount</span
         ><span class="discount discount-mob">-25%</span>
       </p>
     </div>
     <div class="period-block">
-      <p class="period-paragraph">Life Time Members Billing per Month</p>
+      <p class="period-paragraph">Life Time Members Billing </p>
       <label class="period-checkbox-group">
         <input @click="togglePeriod" class="period-checkbox" id="checkbox2" type="checkbox" />
         <span class="period-checkbox-round"></span>
       </label>
       <p class="period-paragraph">
-        Yearly Billing <span class="discount discount-desc">45% discount</span
+        Overall <span class="discount discount-desc">45% discount</span
         ><span class="discount discount-mob">-45%</span>
       </p>
     </div>
