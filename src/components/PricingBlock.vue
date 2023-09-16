@@ -6,6 +6,9 @@
         <h2 class="pricing-subtitle">
          On yearly purchases 25% discount.
         </h2>
+        <h2 class="pricing-sub-subtitle">
+          Life time membership purchases 45% discount
+        </h2>
       </div>
       <div class="pricing-card">
         <PricingBlockCard />
@@ -45,6 +48,11 @@ export default {
 .pricing-title {
   font-weight: 800;
   color: var(--c-dark-desaturated-blue);
+}
+.pricing-sub-subtitle{
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
 }
 .pricing-subtitle {
   font-weight: 600;

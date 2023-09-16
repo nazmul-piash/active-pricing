@@ -1,1 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="246" height="295"><g fill="none" fill-rule="evenodd" stroke="#CFD8EF"><circle cx="68" cy="82" r="62.5"/><circle cx="145" cy="40" r="40.5"/> <circle cx="95" cy="40" r="55.5"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="295">
+<g fill="none" fill-rule="evenodd" stroke="#CFD8EF">
+<circle cx="468" cy="142" r="62.5"/>
+<circle cx="445" cy="90" r="40.5"/>
+<circle cx="395" cy="40" r="55.5"/>
+
+<circle cx="900" cy="35" r="50"
+style="fill:rgb(121,0,121);
+stroke:rgb(0,0,0);stroke-opacity:0.5;opacity:0.5"> </circle>
+<circle cx="820" cy="95" r="30"
+style="fill:rgb(121,0,121);
+stroke:rgb(0,0,0);stroke-opacity:0.5;opacity:0.5"> </circle>    
+
+</g></svg>

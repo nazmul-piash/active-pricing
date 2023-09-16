@@ -8,45 +8,37 @@
       </div>
     </div>
 
-    <input
-      class="pricing-range"
-      v-model="rangeValue"
-      min="1"
-      max="4"
-      type="range"
-    />
+    <input class="pricing-range" v-model="rangeValue" min="1" max="4" type="range" />
     <div class="">
-    <div class="period-block">
-      <p class="period-paragraph">Yearly Billing </p>
-      <label class="period-checkbox-group">
-        <input @click="togglePeriod" class="period-checkbox" id="checkbox1" type="checkbox" />
-        <span class="period-checkbox-round"></span>
-      </label>
-      <p class="period-paragraph">
-        Overall <span class="discount discount-desc">25% discount</span
-        ><span class="discount discount-mob">-25%</span>
-      </p>
+      <div class="period-block">
+
+        <p class="period-paragraph">Yearly Billing </p>
+        <label class="period-checkbox-group">
+          <input @click="togglePeriod" class="period-checkbox" id="checkbox1" type="redio " />
+          <span class="period-checkbox-round"></span>
+        </label>
+        <p class="period-paragraph">
+          Overall <span class="discount discount-desc">25% discount</span><span class="discount discount-mob">-25%</span>
+        </p>
+      </div>
+      <div class="period-block">
+        <p class="period-paragraph">Life Time Members Billing </p>
+        <label class="period-checkbox-group">
+          <input @click="togglePeriod" class="period-checkbox" id="checkbox2" type="redio" />
+          <span class="period-checkbox-round"></span>
+        </label>
+        <p class="period-paragraph">
+          Overall <span class="discount discount-desc">45% discount</span><span class="discount discount-mob">-45%</span>
+        </p>
+      </div>
     </div>
-    <div class="period-block">
-      <p class="period-paragraph">Life Time Members Billing </p>
-      <label class="period-checkbox-group">
-        <input @click="togglePeriod" class="period-checkbox" id="checkbox2" type="checkbox" />
-        <span class="period-checkbox-round"></span>
-      </label>
-      <p class="period-paragraph">
-        Overall <span class="discount discount-desc">45% discount</span
-        ><span class="discount discount-mob">-45%</span>
-      </p>
-    </div>
-  </div>
     <hr class="hr-line" />
   </div>
 
   <div class="period-block">
-    
+
 
   </div>
-  
 </template>
 
 <script>
@@ -81,7 +73,7 @@ export default {
       updatePageviews();
     }
 
-    function lifetimeDiscountCalculation(){
+    function lifetimeDiscountCalculation() {
       if (lifitimeBilling.value === true) {
         finalPrice.value = Math.floor(rowPrice.value - rowPrice.value * 0.45);
       } else if (lifitimeBilling.value === false) {
@@ -90,17 +82,17 @@ export default {
       updatePageviews();
     }
 
- // Choose a payment period
+    // Choose a payment period
 
     function togglePeriod() {
       const checkbox1 = document.getElementById("checkbox1");
       const checkbox2 = document.getElementById("checkbox2");
 
       if (event.target === checkbox1 && event.target !== checkbox2) {
+
         checkbox2.checked = false;
         yearlyBilling.value = !yearlyBilling.value;
         discountCalculation();
-
       } else if (event.target === checkbox2 && event.target !== checkbox1) {
         checkbox1.checked = false;
         lifitimeBilling.value = !lifitimeBilling.value;
@@ -117,7 +109,7 @@ export default {
         rowPrice.value = 600;
       } else if (rangeValue.value == 4) {
         rowPrice.value = 1200;
-      } 
+      }
     }
 
     function updatePageviews() {
@@ -153,26 +145,31 @@ export default {
   box-shadow: 5px 5px 30px var(--c-light-grayish-blue),
     -5px -5px 30px var(--c-light-grayish-blue);
 }
+
 .tariff-block {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .price-group {
   display: flex;
   align-items: center;
 }
+
 .pageviews {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 800;
 }
+
 .price {
   padding-right: 5px;
   font-size: 38px;
   font-weight: 800;
   color: var(--c-dark-desaturated-blue);
 }
+
 .pricing-range[type="range"] {
   -webkit-appearance: none;
   width: 100%;
@@ -180,6 +177,7 @@ export default {
   margin: 50px 0;
   padding: 12px 0;
 }
+
 .pricing-range[type="range"]::-webkit-slider-thumb {
   pointer-events: none;
   -webkit-appearance: none;
@@ -194,17 +192,21 @@ export default {
   margin-top: -14px;
   transition: 0.3s ease;
 }
+
 .pricing-range[type="range"]:hover::-webkit-slider-thumb {
   background-color: var(--c-soft-cyan);
   transition: 0.3s ease;
 }
+
 .pricing-range[type="range"]:active::-webkit-slider-thumb {
   background-color: var(--c-strong-cyan);
   transition: 0.3s ease;
 }
+
 .pricing-range[type="range"]:focus {
   outline: none;
 }
+
 .pricing-range[type="range"]::-ms-track {
   width: 100%;
   cursor: pointer;
@@ -212,6 +214,7 @@ export default {
   border-color: transparent;
   color: transparent;
 }
+
 .pricing-range[type="range"]::-webkit-slider-runnable-track {
   width: 100%;
   height: 8.4px;
@@ -219,17 +222,21 @@ export default {
   background: var(--c-light-grayish-blue);
   border-radius: 50px;
 }
+
 .pricing-range[type="range"]::-ms-fill-lower {
   background-color: #5082e0;
 }
+
 .pricing-range[type="range"]::-moz-range-progress {
   background-color: #5082e0;
 }
+
 .period-block {
   margin-bottom: 15px;
   display: flex;
   align-items: center;
 }
+
 .period-checkbox-group {
   position: relative;
   display: inline-block;
@@ -237,18 +244,23 @@ export default {
   height: 28px;
   margin: 0 20px;
 }
+
 .period-checkbox {
   display: none;
 }
-.period-checkbox:checked + .period-checkbox-round {
+
+.period-checkbox:checked+.period-checkbox-round {
   background-color: var(--c-strong-cyan);
 }
-.period-checkbox:focus + .period-checkbox-round {
+
+.period-checkbox:focus+.period-checkbox-round {
   box-shadow: 0 0 1px var(--c-strong-cyan);
 }
-.period-checkbox:checked + .period-checkbox-round:before {
+
+.period-checkbox:checked+.period-checkbox-round:before {
   transform: translateX(27px);
 }
+
 .period-checkbox-round {
   position: absolute;
   top: 0;
@@ -261,10 +273,12 @@ export default {
   border-radius: 34px;
   transition: 0.3s ease;
 }
+
 .period-checkbox-round:hover {
   background-color: var(--c-soft-cyan);
   transition: 0.3s ease;
 }
+
 .period-checkbox-round:before {
   position: absolute;
   content: "";
@@ -276,6 +290,7 @@ export default {
   transition: 0.4s;
   border-radius: 50%;
 }
+
 .discount {
   position: absolute;
   margin-left: 10px;
@@ -286,32 +301,40 @@ export default {
   font-weight: 800;
   border-radius: 50px;
 }
+
 .discount-desc {
   display: inline-block;
 }
+
 .discount-mob {
   display: none;
 }
+
 .hr-line {
   margin: 50px 0 35px 0;
   border: 1px solid var(--c-light-grayish-blue);
   /* border: 2px solid var(--c-very-pale-blue); */
 }
+
 .submit-block {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .info-group div {
   display: flex;
   align-items: center;
 }
+
 .info-group div img {
   width: 12px;
 }
+
 .info-group div p {
   padding: 5px 0 5px 15px;
 }
+
 .pricing-btn {
   border: none;
   outline: none;
@@ -327,6 +350,7 @@ export default {
   border-radius: 50px;
   transition: 0.3s ease;
 }
+
 .pricing-btn:hover {
   color: var(--c-white);
   transition: 0.3s ease;
@@ -336,27 +360,33 @@ export default {
   .pricing-card-container {
     width: 500px;
   }
+
   .tariff-block {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+
   .pageviews {
     padding-bottom: 15px;
   }
+
   .discount-desc {
     display: none;
   }
+
   .discount-mob {
     display: inline-block;
   }
+
   .submit-block {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+
   .info-group {
     display: flex;
     flex-direction: column;
@@ -369,14 +399,17 @@ export default {
   .pricing-card-container {
     width: 350px;
   }
+
   .pricing-range[type="range"] {
     margin: 25px 0;
   }
+
   .period-block {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .period-checkbox-group {
     margin: 15px 0;
   }
@@ -386,13 +419,14 @@ export default {
   .pricing-card-container {
     width: 350px;
   }
+
   .period-block {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .period-checkbox-group {
     margin: 15px 0;
   }
-}
-</style>
+}</style>
