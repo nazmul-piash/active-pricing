@@ -14,7 +14,7 @@
 
         <p class="period-paragraph">Yearly Billing </p>
         <label class="period-checkbox-group">
-          <input @click="togglePeriod" class="period-checkbox" id="checkbox1" type="redio " />
+          <input @click="togglePeriod" class="period-checkbox" id="checkbox1" type="checkbox " />
           <span class="period-checkbox-round"></span>
         </label>
         <p class="period-paragraph">
@@ -24,7 +24,7 @@
       <div class="period-block">
         <p class="period-paragraph">Life Time Members Billing </p>
         <label class="period-checkbox-group">
-          <input @click="togglePeriod" class="period-checkbox" id="checkbox2" type="redio" />
+          <input @click="togglePeriod" class="period-checkbox" id="checkbox2" type="checkbox" />
           <span class="period-checkbox-round"></span>
         </label>
         <p class="period-paragraph">
