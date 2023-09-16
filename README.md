@@ -1,5 +1,8 @@
 # interactive-pricing-component
 
+## live view
+https://cerulean-figolla-c165b1.netlify.app/
+
 
 ## Project Setup
 
