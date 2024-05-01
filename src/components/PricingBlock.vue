@@ -34,7 +34,7 @@ export default {
   height: 100vh;
 }
 .title-group {
-  padding: 100px 0;
+  padding: 30px 0;
   background-image: url("../assets/images/pattern-circles.svg");
   background-repeat: no-repeat;
   background-position: center center;
